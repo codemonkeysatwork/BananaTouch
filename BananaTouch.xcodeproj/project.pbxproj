@@ -19,6 +19,18 @@
 		DBA94291141FF2BA00FA606C /* CMGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428D141FF2BA00FA606C /* CMGradientView.m */; };
 		DBA94292141FF2BA00FA606C /* CMWelcomeScreenController.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9428E141FF2BA00FA606C /* CMWelcomeScreenController.h */; };
 		DBA94293141FF2BA00FA606C /* CMWelcomeScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */; };
+		DBA9429A141FF43900FA606C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA94268141FF23E00FA606C /* UIKit.framework */; };
+		DBA9429B141FF43900FA606C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9425D141FF23E00FA606C /* Foundation.framework */; };
+		DBA9429C141FF43900FA606C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9426B141FF23E00FA606C /* CoreGraphics.framework */; };
+		DBA942A2141FF43900FA606C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBA942A0141FF43900FA606C /* InfoPlist.strings */; };
+		DBA942A5141FF43900FA606C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA942A4141FF43900FA606C /* main.m */; };
+		DBA942A8141FF43900FA606C /* WelcomeScreenDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA942A7141FF43900FA606C /* WelcomeScreenDemoAppDelegate.m */; };
+		DBA942AB141FF43900FA606C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA942A9141FF43900FA606C /* MainWindow.xib */; };
+		DBA942B9141FF5D500FA606C /* CMGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428D141FF2BA00FA606C /* CMGradientView.m */; };
+		DBA942BA141FF5D800FA606C /* CMWelcomeScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */; };
+		DBA942BE141FF67F00FA606C /* SideLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA942BC141FF67F00FA606C /* SideLoginController.m */; };
+		DBA942BF141FF67F00FA606C /* SideLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA942BD141FF67F00FA606C /* SideLoginController.xib */; };
+		DBA942C1141FF87F00FA606C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA942C0141FF87E00FA606C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,18 @@
 		DBA9428D141FF2BA00FA606C /* CMGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMGradientView.m; sourceTree = "<group>"; };
 		DBA9428E141FF2BA00FA606C /* CMWelcomeScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWelcomeScreenController.h; sourceTree = "<group>"; };
 		DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWelcomeScreenController.m; sourceTree = "<group>"; };
+		DBA94298141FF43900FA606C /* WelcomeScreenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WelcomeScreenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA9429F141FF43900FA606C /* WelcomeScreenDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WelcomeScreenDemo-Info.plist"; sourceTree = "<group>"; };
+		DBA942A1141FF43900FA606C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBA942A3141FF43900FA606C /* WelcomeScreenDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WelcomeScreenDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DBA942A4141FF43900FA606C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBA942A6141FF43900FA606C /* WelcomeScreenDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeScreenDemoAppDelegate.h; sourceTree = "<group>"; };
+		DBA942A7141FF43900FA606C /* WelcomeScreenDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeScreenDemoAppDelegate.m; sourceTree = "<group>"; };
+		DBA942AA141FF43900FA606C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		DBA942BB141FF67F00FA606C /* SideLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideLoginController.h; sourceTree = "<group>"; };
+		DBA942BC141FF67F00FA606C /* SideLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideLoginController.m; sourceTree = "<group>"; };
+		DBA942BD141FF67F00FA606C /* SideLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideLoginController.xib; sourceTree = "<group>"; };
+		DBA942C0141FF87E00FA606C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +93,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBA94295141FF43900FA606C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA942C1141FF87F00FA606C /* QuartzCore.framework in Frameworks */,
+				DBA9429A141FF43900FA606C /* UIKit.framework in Frameworks */,
+				DBA9429B141FF43900FA606C /* Foundation.framework in Frameworks */,
+				DBA9429C141FF43900FA606C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA9425F141FF23E00FA606C /* BananaTouch */,
+				DBA942B7141FF50700FA606C /* Examples */,
 				DBA94270141FF23E00FA606C /* BananaTouchTests */,
 				DBA9425C141FF23E00FA606C /* Frameworks */,
 				DBA9425B141FF23E00FA606C /* Products */,
@@ -87,6 +123,7 @@
 			children = (
 				DBA9425A141FF23E00FA606C /* libBananaTouch.a */,
 				DBA94267141FF23E00FA606C /* BananaTouchTests.octest */,
+				DBA94298141FF43900FA606C /* WelcomeScreenDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +134,7 @@
 				DBA9425D141FF23E00FA606C /* Foundation.framework */,
 				DBA94268141FF23E00FA606C /* UIKit.framework */,
 				DBA9426B141FF23E00FA606C /* CoreGraphics.framework */,
+				DBA942C0141FF87E00FA606C /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,6 +177,39 @@
 				DBA94276141FF23E00FA606C /* BananaTouchTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBA9429D141FF43900FA606C /* WelcomeScreenDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DBA942A6141FF43900FA606C /* WelcomeScreenDemoAppDelegate.h */,
+				DBA942A7141FF43900FA606C /* WelcomeScreenDemoAppDelegate.m */,
+				DBA942A9141FF43900FA606C /* MainWindow.xib */,
+				DBA9429E141FF43900FA606C /* Supporting Files */,
+				DBA942BB141FF67F00FA606C /* SideLoginController.h */,
+				DBA942BC141FF67F00FA606C /* SideLoginController.m */,
+				DBA942BD141FF67F00FA606C /* SideLoginController.xib */,
+			);
+			path = WelcomeScreenDemo;
+			sourceTree = "<group>";
+		};
+		DBA9429E141FF43900FA606C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9429F141FF43900FA606C /* WelcomeScreenDemo-Info.plist */,
+				DBA942A0141FF43900FA606C /* InfoPlist.strings */,
+				DBA942A3141FF43900FA606C /* WelcomeScreenDemo-Prefix.pch */,
+				DBA942A4141FF43900FA606C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBA942B7141FF50700FA606C /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9429D141FF43900FA606C /* WelcomeScreenDemo */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +263,23 @@
 			productReference = DBA94267141FF23E00FA606C /* BananaTouchTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		DBA94297141FF43900FA606C /* WelcomeScreenDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA942AC141FF43900FA606C /* Build configuration list for PBXNativeTarget "WelcomeScreenDemo" */;
+			buildPhases = (
+				DBA94294141FF43900FA606C /* Sources */,
+				DBA94295141FF43900FA606C /* Frameworks */,
+				DBA94296141FF43900FA606C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WelcomeScreenDemo;
+			productName = WelcomeScreenDemo;
+			productReference = DBA94298141FF43900FA606C /* WelcomeScreenDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +302,7 @@
 			targets = (
 				DBA94259141FF23E00FA606C /* BananaTouch */,
 				DBA94266141FF23E00FA606C /* BananaTouchTests */,
+				DBA94297141FF43900FA606C /* WelcomeScreenDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +314,16 @@
 			files = (
 				DBA94275141FF23E00FA606C /* InfoPlist.strings in Resources */,
 				DBA94278141FF23E00FA606C /* BananaTouchTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA94296141FF43900FA606C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA942A2141FF43900FA606C /* InfoPlist.strings in Resources */,
+				DBA942AB141FF43900FA606C /* MainWindow.xib in Resources */,
+				DBA942BF141FF67F00FA606C /* SideLoginController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +363,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBA94294141FF43900FA606C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA942A5141FF43900FA606C /* main.m in Sources */,
+				DBA942A8141FF43900FA606C /* WelcomeScreenDemoAppDelegate.m in Sources */,
+				DBA942B9141FF5D500FA606C /* CMGradientView.m in Sources */,
+				DBA942BA141FF5D800FA606C /* CMWelcomeScreenController.m in Sources */,
+				DBA942BE141FF67F00FA606C /* SideLoginController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -281,6 +392,22 @@
 				DBA94274141FF23E00FA606C /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBA942A0141FF43900FA606C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA942A1141FF43900FA606C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBA942A9141FF43900FA606C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA942AA141FF43900FA606C /* en */,
+			);
+			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -379,6 +506,41 @@
 			};
 			name = Release;
 		};
+		DBA942AD141FF43900FA606C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Examples/WelcomeScreenDemo/WelcomeScreenDemo-Prefix.pch";
+				INFOPLIST_FILE = "Examples/WelcomeScreenDemo/WelcomeScreenDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DBA942AE141FF43900FA606C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Examples/WelcomeScreenDemo/WelcomeScreenDemo-Prefix.pch";
+				INFOPLIST_FILE = "Examples/WelcomeScreenDemo/WelcomeScreenDemo-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -398,6 +560,7 @@
 				DBA9427F141FF23E00FA606C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBA94280141FF23E00FA606C /* Build configuration list for PBXNativeTarget "BananaTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +569,16 @@
 				DBA94282141FF23E00FA606C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA942AC141FF43900FA606C /* Build configuration list for PBXNativeTarget "WelcomeScreenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA942AD141FF43900FA606C /* Debug */,
+				DBA942AE141FF43900FA606C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
