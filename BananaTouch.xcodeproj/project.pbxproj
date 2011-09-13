@@ -15,6 +15,10 @@
 		DBA94275141FF23E00FA606C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBA94273141FF23E00FA606C /* InfoPlist.strings */; };
 		DBA94278141FF23E00FA606C /* BananaTouchTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DBA94277141FF23E00FA606C /* BananaTouchTests.h */; };
 		DBA9427A141FF23E00FA606C /* BananaTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA94279141FF23E00FA606C /* BananaTouchTests.m */; };
+		DBA94290141FF2BA00FA606C /* CMGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9428C141FF2BA00FA606C /* CMGradientView.h */; };
+		DBA94291141FF2BA00FA606C /* CMGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428D141FF2BA00FA606C /* CMGradientView.m */; };
+		DBA94292141FF2BA00FA606C /* CMWelcomeScreenController.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9428E141FF2BA00FA606C /* CMWelcomeScreenController.h */; };
+		DBA94293141FF2BA00FA606C /* CMWelcomeScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,15 +34,19 @@
 /* Begin PBXFileReference section */
 		DBA9425A141FF23E00FA606C /* libBananaTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBananaTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA9425D141FF23E00FA606C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DBA94261141FF23E00FA606C /* BananaTouch-Prefix.pch */ = {isa = PBXFileReference; path = "BananaTouch-Prefix.pch"; sourceTree = "<group>"; };
+		DBA94261141FF23E00FA606C /* BananaTouch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BananaTouch-Prefix.pch"; sourceTree = "<group>"; };
 		DBA94267141FF23E00FA606C /* BananaTouchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BananaTouchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA94268141FF23E00FA606C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DBA9426B141FF23E00FA606C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DBA94272141FF23E00FA606C /* BananaTouchTests-Info.plist */ = {isa = PBXFileReference; path = "BananaTouchTests-Info.plist"; sourceTree = "<group>"; };
+		DBA94272141FF23E00FA606C /* BananaTouchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BananaTouchTests-Info.plist"; sourceTree = "<group>"; };
 		DBA94274141FF23E00FA606C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DBA94276141FF23E00FA606C /* BananaTouchTests-Prefix.pch */ = {isa = PBXFileReference; path = "BananaTouchTests-Prefix.pch"; sourceTree = "<group>"; };
+		DBA94276141FF23E00FA606C /* BananaTouchTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BananaTouchTests-Prefix.pch"; sourceTree = "<group>"; };
 		DBA94277141FF23E00FA606C /* BananaTouchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BananaTouchTests.h; sourceTree = "<group>"; };
 		DBA94279141FF23E00FA606C /* BananaTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BananaTouchTests.m; sourceTree = "<group>"; };
+		DBA9428C141FF2BA00FA606C /* CMGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMGradientView.h; sourceTree = "<group>"; };
+		DBA9428D141FF2BA00FA606C /* CMGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMGradientView.m; sourceTree = "<group>"; };
+		DBA9428E141FF2BA00FA606C /* CMWelcomeScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWelcomeScreenController.h; sourceTree = "<group>"; };
+		DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWelcomeScreenController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 		DBA9425F141FF23E00FA606C /* BananaTouch */ = {
 			isa = PBXGroup;
 			children = (
+				DBA9428C141FF2BA00FA606C /* CMGradientView.h */,
+				DBA9428D141FF2BA00FA606C /* CMGradientView.m */,
+				DBA9428E141FF2BA00FA606C /* CMWelcomeScreenController.h */,
+				DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */,
 				DBA94260141FF23E00FA606C /* Supporting Files */,
 			);
 			path = BananaTouch;
@@ -136,6 +148,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA94290141FF2BA00FA606C /* CMGradientView.h in Headers */,
+				DBA94292141FF2BA00FA606C /* CMWelcomeScreenController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +251,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA94291141FF2BA00FA606C /* CMGradientView.m in Sources */,
+				DBA94293141FF2BA00FA606C /* CMWelcomeScreenController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
