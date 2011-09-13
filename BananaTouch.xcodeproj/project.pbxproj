@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBA9425E141FF23E00FA606C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9425D141FF23E00FA606C /* Foundation.framework */; };
+		DBA94269141FF23E00FA606C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA94268141FF23E00FA606C /* UIKit.framework */; };
+		DBA9426A141FF23E00FA606C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9425D141FF23E00FA606C /* Foundation.framework */; };
+		DBA9426C141FF23E00FA606C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9426B141FF23E00FA606C /* CoreGraphics.framework */; };
+		DBA9426F141FF23E00FA606C /* libBananaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9425A141FF23E00FA606C /* libBananaTouch.a */; };
+		DBA94275141FF23E00FA606C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBA94273141FF23E00FA606C /* InfoPlist.strings */; };
+		DBA94278141FF23E00FA606C /* BananaTouchTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DBA94277141FF23E00FA606C /* BananaTouchTests.h */; };
+		DBA9427A141FF23E00FA606C /* BananaTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA94279141FF23E00FA606C /* BananaTouchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBA9426D141FF23E00FA606C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBA94251141FF23E00FA606C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA94259141FF23E00FA606C;
+			remoteInfo = BananaTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBA9425A141FF23E00FA606C /* libBananaTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBananaTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA9425D141FF23E00FA606C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DBA94261141FF23E00FA606C /* BananaTouch-Prefix.pch */ = {isa = PBXFileReference; path = "BananaTouch-Prefix.pch"; sourceTree = "<group>"; };
+		DBA94267141FF23E00FA606C /* BananaTouchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BananaTouchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA94268141FF23E00FA606C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBA9426B141FF23E00FA606C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DBA94272141FF23E00FA606C /* BananaTouchTests-Info.plist */ = {isa = PBXFileReference; path = "BananaTouchTests-Info.plist"; sourceTree = "<group>"; };
+		DBA94274141FF23E00FA606C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBA94276141FF23E00FA606C /* BananaTouchTests-Prefix.pch */ = {isa = PBXFileReference; path = "BananaTouchTests-Prefix.pch"; sourceTree = "<group>"; };
+		DBA94277141FF23E00FA606C /* BananaTouchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BananaTouchTests.h; sourceTree = "<group>"; };
+		DBA94279141FF23E00FA606C /* BananaTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BananaTouchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBA94257141FF23E00FA606C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA9425E141FF23E00FA606C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA94263141FF23E00FA606C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA94269141FF23E00FA606C /* UIKit.framework in Frameworks */,
+				DBA9426A141FF23E00FA606C /* Foundation.framework in Frameworks */,
+				DBA9426C141FF23E00FA606C /* CoreGraphics.framework in Frameworks */,
+				DBA9426F141FF23E00FA606C /* libBananaTouch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBA9424F141FF23E00FA606C = {
+			isa = PBXGroup;
+			children = (
+				DBA9425F141FF23E00FA606C /* BananaTouch */,
+				DBA94270141FF23E00FA606C /* BananaTouchTests */,
+				DBA9425C141FF23E00FA606C /* Frameworks */,
+				DBA9425B141FF23E00FA606C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBA9425B141FF23E00FA606C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9425A141FF23E00FA606C /* libBananaTouch.a */,
+				DBA94267141FF23E00FA606C /* BananaTouchTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBA9425C141FF23E00FA606C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9425D141FF23E00FA606C /* Foundation.framework */,
+				DBA94268141FF23E00FA606C /* UIKit.framework */,
+				DBA9426B141FF23E00FA606C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBA9425F141FF23E00FA606C /* BananaTouch */ = {
+			isa = PBXGroup;
+			children = (
+				DBA94260141FF23E00FA606C /* Supporting Files */,
+			);
+			path = BananaTouch;
+			sourceTree = "<group>";
+		};
+		DBA94260141FF23E00FA606C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBA94261141FF23E00FA606C /* BananaTouch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBA94270141FF23E00FA606C /* BananaTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBA94277141FF23E00FA606C /* BananaTouchTests.h */,
+				DBA94279141FF23E00FA606C /* BananaTouchTests.m */,
+				DBA94271141FF23E00FA606C /* Supporting Files */,
+			);
+			path = BananaTouchTests;
+			sourceTree = "<group>";
+		};
+		DBA94271141FF23E00FA606C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBA94272141FF23E00FA606C /* BananaTouchTests-Info.plist */,
+				DBA94273141FF23E00FA606C /* InfoPlist.strings */,
+				DBA94276141FF23E00FA606C /* BananaTouchTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DBA94258141FF23E00FA606C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DBA94259141FF23E00FA606C /* BananaTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA9427D141FF23E00FA606C /* Build configuration list for PBXNativeTarget "BananaTouch" */;
+			buildPhases = (
+				DBA94256141FF23E00FA606C /* Sources */,
+				DBA94257141FF23E00FA606C /* Frameworks */,
+				DBA94258141FF23E00FA606C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BananaTouch;
+			productName = BananaTouch;
+			productReference = DBA9425A141FF23E00FA606C /* libBananaTouch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DBA94266141FF23E00FA606C /* BananaTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA94280141FF23E00FA606C /* Build configuration list for PBXNativeTarget "BananaTouchTests" */;
+			buildPhases = (
+				DBA94262141FF23E00FA606C /* Sources */,
+				DBA94263141FF23E00FA606C /* Frameworks */,
+				DBA94264141FF23E00FA606C /* Resources */,
+				DBA94265141FF23E00FA606C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA9426E141FF23E00FA606C /* PBXTargetDependency */,
+			);
+			name = BananaTouchTests;
+			productName = BananaTouchTests;
+			productReference = DBA94267141FF23E00FA606C /* BananaTouchTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBA94251141FF23E00FA606C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = OutOfOrder.cc;
+			};
+			buildConfigurationList = DBA94254141FF23E00FA606C /* Build configuration list for PBXProject "BananaTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DBA9424F141FF23E00FA606C;
+			productRefGroup = DBA9425B141FF23E00FA606C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBA94259141FF23E00FA606C /* BananaTouch */,
+				DBA94266141FF23E00FA606C /* BananaTouchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBA94264141FF23E00FA606C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA94275141FF23E00FA606C /* InfoPlist.strings in Resources */,
+				DBA94278141FF23E00FA606C /* BananaTouchTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DBA94265141FF23E00FA606C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBA94256141FF23E00FA606C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA94262141FF23E00FA606C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA9427A141FF23E00FA606C /* BananaTouchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBA9426E141FF23E00FA606C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBA94259141FF23E00FA606C /* BananaTouch */;
+			targetProxy = DBA9426D141FF23E00FA606C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBA94273141FF23E00FA606C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA94274141FF23E00FA606C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBA9427B141FF23E00FA606C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DBA9427C141FF23E00FA606C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		DBA9427E141FF23E00FA606C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/BananaTouch.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BananaTouch/BananaTouch-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DBA9427F141FF23E00FA606C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/BananaTouch.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BananaTouch/BananaTouch-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DBA94281141FF23E00FA606C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BananaTouchTests/BananaTouchTests-Prefix.pch";
+				INFOPLIST_FILE = "BananaTouchTests/BananaTouchTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DBA94282141FF23E00FA606C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BananaTouchTests/BananaTouchTests-Prefix.pch";
+				INFOPLIST_FILE = "BananaTouchTests/BananaTouchTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBA94254141FF23E00FA606C /* Build configuration list for PBXProject "BananaTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA9427B141FF23E00FA606C /* Debug */,
+				DBA9427C141FF23E00FA606C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA9427D141FF23E00FA606C /* Build configuration list for PBXNativeTarget "BananaTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA9427E141FF23E00FA606C /* Debug */,
+				DBA9427F141FF23E00FA606C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DBA94280141FF23E00FA606C /* Build configuration list for PBXNativeTarget "BananaTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA94281141FF23E00FA606C /* Debug */,
+				DBA94282141FF23E00FA606C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBA94251141FF23E00FA606C /* Project object */;
+}
