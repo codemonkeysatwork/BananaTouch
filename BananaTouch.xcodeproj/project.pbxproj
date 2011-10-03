@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB551C1714394E0100A28FCB /* BTRoundedView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB551C1514394E0100A28FCB /* BTRoundedView.h */; };
+		DB551C1814394E0100A28FCB /* BTRoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB551C1614394E0100A28FCB /* BTRoundedView.m */; };
 		DBA9425E141FF23E00FA606C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9425D141FF23E00FA606C /* Foundation.framework */; };
 		DBA94269141FF23E00FA606C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA94268141FF23E00FA606C /* UIKit.framework */; };
 		DBA9426A141FF23E00FA606C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9425D141FF23E00FA606C /* Foundation.framework */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB551C1514394E0100A28FCB /* BTRoundedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTRoundedView.h; sourceTree = "<group>"; };
+		DB551C1614394E0100A28FCB /* BTRoundedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTRoundedView.m; sourceTree = "<group>"; };
 		DBA9425A141FF23E00FA606C /* libBananaTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBananaTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA9425D141FF23E00FA606C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DBA94261141FF23E00FA606C /* BananaTouch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BananaTouch-Prefix.pch"; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				DBA9428D141FF2BA00FA606C /* CMGradientView.m */,
 				DBA9428E141FF2BA00FA606C /* CMWelcomeScreenController.h */,
 				DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */,
+				DB551C1514394E0100A28FCB /* BTRoundedView.h */,
+				DB551C1614394E0100A28FCB /* BTRoundedView.m */,
 				DBA94260141FF23E00FA606C /* Supporting Files */,
 			);
 			path = BananaTouch;
@@ -221,6 +227,7 @@
 			files = (
 				DBA94290141FF2BA00FA606C /* CMGradientView.h in Headers */,
 				DBA94292141FF2BA00FA606C /* CMWelcomeScreenController.h in Headers */,
+				DB551C1714394E0100A28FCB /* BTRoundedView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +359,7 @@
 			files = (
 				DBA94291141FF2BA00FA606C /* CMGradientView.m in Sources */,
 				DBA94293141FF2BA00FA606C /* CMWelcomeScreenController.m in Sources */,
+				DB551C1814394E0100A28FCB /* BTRoundedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
