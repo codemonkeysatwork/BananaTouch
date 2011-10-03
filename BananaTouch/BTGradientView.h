@@ -1,5 +1,5 @@
 //
-//  CMGradientView.h
+//  BTGradientView.h
 //  BoardRoom
 //
 //  Created by Edward Rudd on 8/31/11.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CMGradientView : UIView {
+@interface BTGradientView : UIView {
 
 }
 

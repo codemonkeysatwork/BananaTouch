@@ -6,17 +6,17 @@
 //  Copyright 2011 OutOfOrder.cc. All rights reserved.
 //
 
-#import "CMWelcomeScreenController.h"
-#import "CMGradientView.h"
+#import "BTWelcomeScreenController.h"
+#import "BTGradientView.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface CMWelcomeScreenController()
+@interface BTWelcomeScreenController()
 @property (nonatomic, retain) UIView* wrapperView;
 @property (nonatomic, assign) BOOL keyboardVisible;
 - (void)showSideScreen;
 @end
 
-@implementation CMWelcomeScreenController
+@implementation BTWelcomeScreenController
 
 @synthesize sideViewController = _sideViewController;
 @synthesize logoImage = _logoImage;
@@ -56,12 +56,12 @@
 
 #pragma mark - Memory Management
 
-- (id)initWithSideController: (UIViewController<CMSideViewController> *)sideController
+- (id)initWithSideController: (UIViewController<BTSideViewController> *)sideController
 {
     return [self initWithSideController:sideController animated:YES];
 }
 
-- (id)initWithSideController:(UIViewController<CMSideViewController> *)sideController animated:(BOOL)animated
+- (id)initWithSideController:(UIViewController<BTSideViewController> *)sideController animated:(BOOL)animated
 {
     self = [super init];
     if (self) {
@@ -126,7 +126,7 @@
 {
     CGSize screen = [[UIScreen mainScreen] applicationFrame].size;
 
-    CMGradientView *main = [[CMGradientView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
+    BTGradientView *main = [[BTGradientView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
     main.colors = [NSArray arrayWithObjects:(id)[[UIColor grayColor] CGColor], (id)[[UIColor whiteColor] CGColor], nil];
     main.backgroundColor = [UIColor clearColor];
 

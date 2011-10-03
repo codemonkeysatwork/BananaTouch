@@ -7,7 +7,7 @@
 //
 
 #import "WelcomeScreenDemoAppDelegate.h"
-#import "CMWelcomeScreenController.h"
+#import "BTWelcomeScreenController.h"
 #import "SideLoginController.h"
 
 @implementation WelcomeScreenDemoAppDelegate
@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     SideLoginController *sc = [[SideLoginController alloc] init];
-    self.welcomeScreenController = [[CMWelcomeScreenController alloc] initWithSideController: sc];
+    self.welcomeScreenController = [[BTWelcomeScreenController alloc] initWithSideController: sc];
     
     self.window.rootViewController = self.welcomeScreenController;
     [self.window makeKeyAndVisible];

@@ -1,15 +1,15 @@
 //
-//  CMGradientView.m
+//  BTGradientView.m
 //  BoardRoom
 //
 //  Created by Edward Rudd on 8/31/11.
 //  Copyright 2011 OutOfOrder.cc. All rights reserved.
 //
 
-#import "CMGradientView.h"
+#import "BTGradientView.h"
 #import <QuartzCore/QuartzCore.h>
 
-@implementation CMGradientView
+@implementation BTGradientView
 
 @dynamic stops;
 @dynamic colors;

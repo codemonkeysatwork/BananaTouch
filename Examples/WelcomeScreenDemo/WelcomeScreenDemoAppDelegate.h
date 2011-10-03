@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-@class CMWelcomeScreenController;
+@class BTWelcomeScreenController;
 
 @interface WelcomeScreenDemoAppDelegate : NSObject <UIApplicationDelegate> {
 
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) CMWelcomeScreenController *welcomeScreenController;
+@property (nonatomic, retain) BTWelcomeScreenController *welcomeScreenController;
 
 @end

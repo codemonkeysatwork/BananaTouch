@@ -17,10 +17,10 @@
 		DBA94275141FF23E00FA606C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBA94273141FF23E00FA606C /* InfoPlist.strings */; };
 		DBA94278141FF23E00FA606C /* BananaTouchTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DBA94277141FF23E00FA606C /* BananaTouchTests.h */; };
 		DBA9427A141FF23E00FA606C /* BananaTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA94279141FF23E00FA606C /* BananaTouchTests.m */; };
-		DBA94290141FF2BA00FA606C /* CMGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9428C141FF2BA00FA606C /* CMGradientView.h */; };
-		DBA94291141FF2BA00FA606C /* CMGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428D141FF2BA00FA606C /* CMGradientView.m */; };
-		DBA94292141FF2BA00FA606C /* CMWelcomeScreenController.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9428E141FF2BA00FA606C /* CMWelcomeScreenController.h */; };
-		DBA94293141FF2BA00FA606C /* CMWelcomeScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */; };
+		DBA94290141FF2BA00FA606C /* BTGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9428C141FF2BA00FA606C /* BTGradientView.h */; };
+		DBA94291141FF2BA00FA606C /* BTGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428D141FF2BA00FA606C /* BTGradientView.m */; };
+		DBA94292141FF2BA00FA606C /* BTWelcomeScreenController.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9428E141FF2BA00FA606C /* BTWelcomeScreenController.h */; };
+		DBA94293141FF2BA00FA606C /* BTWelcomeScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428F141FF2BA00FA606C /* BTWelcomeScreenController.m */; };
 		DBA9429A141FF43900FA606C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA94268141FF23E00FA606C /* UIKit.framework */; };
 		DBA9429B141FF43900FA606C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9425D141FF23E00FA606C /* Foundation.framework */; };
 		DBA9429C141FF43900FA606C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9426B141FF23E00FA606C /* CoreGraphics.framework */; };
@@ -28,8 +28,8 @@
 		DBA942A5141FF43900FA606C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA942A4141FF43900FA606C /* main.m */; };
 		DBA942A8141FF43900FA606C /* WelcomeScreenDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA942A7141FF43900FA606C /* WelcomeScreenDemoAppDelegate.m */; };
 		DBA942AB141FF43900FA606C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA942A9141FF43900FA606C /* MainWindow.xib */; };
-		DBA942B9141FF5D500FA606C /* CMGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428D141FF2BA00FA606C /* CMGradientView.m */; };
-		DBA942BA141FF5D800FA606C /* CMWelcomeScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */; };
+		DBA942B9141FF5D500FA606C /* BTGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428D141FF2BA00FA606C /* BTGradientView.m */; };
+		DBA942BA141FF5D800FA606C /* BTWelcomeScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9428F141FF2BA00FA606C /* BTWelcomeScreenController.m */; };
 		DBA942BE141FF67F00FA606C /* SideLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA942BC141FF67F00FA606C /* SideLoginController.m */; };
 		DBA942BF141FF67F00FA606C /* SideLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA942BD141FF67F00FA606C /* SideLoginController.xib */; };
 		DBA942C1141FF87F00FA606C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA942C0141FF87E00FA606C /* QuartzCore.framework */; };
@@ -59,10 +59,10 @@
 		DBA94276141FF23E00FA606C /* BananaTouchTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BananaTouchTests-Prefix.pch"; sourceTree = "<group>"; };
 		DBA94277141FF23E00FA606C /* BananaTouchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BananaTouchTests.h; sourceTree = "<group>"; };
 		DBA94279141FF23E00FA606C /* BananaTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BananaTouchTests.m; sourceTree = "<group>"; };
-		DBA9428C141FF2BA00FA606C /* CMGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMGradientView.h; sourceTree = "<group>"; };
-		DBA9428D141FF2BA00FA606C /* CMGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMGradientView.m; sourceTree = "<group>"; };
-		DBA9428E141FF2BA00FA606C /* CMWelcomeScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWelcomeScreenController.h; sourceTree = "<group>"; };
-		DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWelcomeScreenController.m; sourceTree = "<group>"; };
+		DBA9428C141FF2BA00FA606C /* BTGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGradientView.h; sourceTree = "<group>"; };
+		DBA9428D141FF2BA00FA606C /* BTGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGradientView.m; sourceTree = "<group>"; };
+		DBA9428E141FF2BA00FA606C /* BTWelcomeScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTWelcomeScreenController.h; sourceTree = "<group>"; };
+		DBA9428F141FF2BA00FA606C /* BTWelcomeScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTWelcomeScreenController.m; sourceTree = "<group>"; };
 		DBA94298141FF43900FA606C /* WelcomeScreenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WelcomeScreenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA9429F141FF43900FA606C /* WelcomeScreenDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WelcomeScreenDemo-Info.plist"; sourceTree = "<group>"; };
 		DBA942A1141FF43900FA606C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -146,10 +146,10 @@
 		DBA9425F141FF23E00FA606C /* BananaTouch */ = {
 			isa = PBXGroup;
 			children = (
-				DBA9428C141FF2BA00FA606C /* CMGradientView.h */,
-				DBA9428D141FF2BA00FA606C /* CMGradientView.m */,
-				DBA9428E141FF2BA00FA606C /* CMWelcomeScreenController.h */,
-				DBA9428F141FF2BA00FA606C /* CMWelcomeScreenController.m */,
+				DBA9428C141FF2BA00FA606C /* BTGradientView.h */,
+				DBA9428D141FF2BA00FA606C /* BTGradientView.m */,
+				DBA9428E141FF2BA00FA606C /* BTWelcomeScreenController.h */,
+				DBA9428F141FF2BA00FA606C /* BTWelcomeScreenController.m */,
 				DB551C1514394E0100A28FCB /* BTRoundedView.h */,
 				DB551C1614394E0100A28FCB /* BTRoundedView.m */,
 				DBA94260141FF23E00FA606C /* Supporting Files */,
@@ -225,8 +225,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA94290141FF2BA00FA606C /* CMGradientView.h in Headers */,
-				DBA94292141FF2BA00FA606C /* CMWelcomeScreenController.h in Headers */,
+				DBA94290141FF2BA00FA606C /* BTGradientView.h in Headers */,
+				DBA94292141FF2BA00FA606C /* BTWelcomeScreenController.h in Headers */,
 				DB551C1714394E0100A28FCB /* BTRoundedView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,8 +357,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA94291141FF2BA00FA606C /* CMGradientView.m in Sources */,
-				DBA94293141FF2BA00FA606C /* CMWelcomeScreenController.m in Sources */,
+				DBA94291141FF2BA00FA606C /* BTGradientView.m in Sources */,
+				DBA94293141FF2BA00FA606C /* BTWelcomeScreenController.m in Sources */,
 				DB551C1814394E0100A28FCB /* BTRoundedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,8 +377,8 @@
 			files = (
 				DBA942A5141FF43900FA606C /* main.m in Sources */,
 				DBA942A8141FF43900FA606C /* WelcomeScreenDemoAppDelegate.m in Sources */,
-				DBA942B9141FF5D500FA606C /* CMGradientView.m in Sources */,
-				DBA942BA141FF5D800FA606C /* CMWelcomeScreenController.m in Sources */,
+				DBA942B9141FF5D500FA606C /* BTGradientView.m in Sources */,
+				DBA942BA141FF5D800FA606C /* BTWelcomeScreenController.m in Sources */,
 				DBA942BE141FF67F00FA606C /* SideLoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-#include "CMWelcomeScreenController.h"
+#include "BTWelcomeScreenController.h"
 
-@interface SideLoginController : UIViewController <CMSideViewController> {
+@interface SideLoginController : UIViewController <BTSideViewController> {
     
 }
 
-@property (nonatomic, retain) CMWelcomeScreenController *welcomeScreenController;
+@property (nonatomic, retain) BTWelcomeScreenController *welcomeScreenController;
 
 - (IBAction) doLogin;
 
