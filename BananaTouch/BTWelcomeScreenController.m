@@ -181,6 +181,10 @@
 {
     if (_animateSideView) {
         [self performSelector:@selector(showSideScreen) withObject:nil afterDelay:1.0];
+    } else {
+        if ([_sideViewController respondsToSelector:@selector(sideController:didAppearAnimated:)]) {
+            [_sideViewController sideController:_sideViewController didAppearAnimated: NO];
+        }
     }
 }
 
@@ -266,7 +270,7 @@
 
     void (^completelogoblock)(BOOL) = ^(BOOL finished){
         if ([_sideViewController respondsToSelector:@selector(sideController:didAppearAnimated:)]) {
-            [_sideViewController sideController:_sideViewController didAppearAnimated: _animateSideView];
+            [_sideViewController sideController:_sideViewController didAppearAnimated: YES];
         }
     };
 
@@ -274,7 +278,7 @@
         [UIView animateWithDuration:0.7 animations:movelogoblock completion:completelogoblock];
     } else {
         movelogoblock();
-        completelogoblock(YES);
+        // don't call sideController:didAppearAnimated: here.. do it in viewDidAppear
     }
 }
 
