@@ -10,7 +10,7 @@
 
 
 @interface CMGradientView : UIView {
-    
+
 }
 
 @property (nonatomic, copy) NSArray *stops;

@@ -128,7 +128,7 @@
 
     CMGradientView *main = [[CMGradientView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
     main.colors = [NSArray arrayWithObjects:(id)[[UIColor grayColor] CGColor], (id)[[UIColor whiteColor] CGColor], nil];
-    main.backgroundColor = [UIColor greenColor];
+    main.backgroundColor = [UIColor clearColor];
 
     self.view = main;
     [main release];
