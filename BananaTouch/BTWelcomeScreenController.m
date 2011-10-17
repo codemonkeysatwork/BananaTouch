@@ -68,12 +68,22 @@
         self.sideViewController = sideController;
         _keyboardVisible = NO;
         _animateSideView = animated;
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(keyboardShow:)
+                                                     name:UIKeyboardWillShowNotification
+                                                   object:nil];
+
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(keyboardHide:)
+                                                     name:UIKeyboardWillHideNotification
+                                                   object:nil];
     }
     return self;
 }
 
 - (void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [_sideViewController release];
     [_logoImage release];
     [_wrapperView release];
@@ -148,15 +158,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardShow:)
-                                                 name:UIKeyboardWillShowNotification
-                                               object:nil];
-
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardHide:)
-                                                 name:UIKeyboardWillHideNotification
-                                               object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -173,8 +174,6 @@
     [_wrapperView release];
     _wrapperView = nil;
     [super viewDidUnload];
-
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)viewDidAppear:(BOOL)animated
