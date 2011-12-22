@@ -159,6 +159,7 @@
         _backdropImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth
                                 | UIViewAutoresizingFlexibleHeight;
         _backdropImageView.opaque = YES;
+        _backdropImageView.userInteractionEnabled = YES;
         _backdropImageView.backgroundColor = [UIColor blackColor];
         if (_backdropImageLandscape) {
             _backdropImageView.image = _backdropImageLandscape;
