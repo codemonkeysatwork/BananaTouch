@@ -20,6 +20,7 @@
 
 @synthesize sideViewController = _sideViewController;
 @synthesize logoImage = _logoImage;
+@synthesize backdropImage = _backdropImage;
 @synthesize animateSideView = _animateSideView;
 
 @synthesize wrapperView = _wrapperView;
@@ -52,6 +53,18 @@
                                         | UIViewAutoresizingFlexibleRightMargin;
     }
     return _logoImage;
+}
+
+- (UIImageView *)backdropImage
+{
+    if (!_backdropImage) {
+        CGSize screen = [[UIScreen mainScreen] applicationFrame].size;
+
+        _backdropImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
+        _backdropImage.autoresizingMask = UIViewAutoresizingFlexibleWidth
+                                            | UIViewAutoresizingFlexibleHeight;
+    }
+    return _backdropImage;
 }
 
 #pragma mark - Memory Management
@@ -87,6 +100,7 @@
     [_sideViewController release];
     [_logoImage release];
     [_wrapperView release];
+    [_backdropImage release];
     [super dealloc];
 }
 
@@ -136,12 +150,19 @@
 {
     CGSize screen = [[UIScreen mainScreen] applicationFrame].size;
 
-    BTGradientView *main = [[BTGradientView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
-    main.colors = [NSArray arrayWithObjects:(id)[[UIColor grayColor] CGColor], (id)[[UIColor whiteColor] CGColor], nil];
-    main.backgroundColor = [UIColor clearColor];
+    if (_backdropImage) {
+        UIView *main = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
+        self.view = main;
+        [main release];
+        [self.view addSubview:_backdropImage];
+    } else {
+        BTGradientView *main = [[BTGradientView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
+        main.colors = [NSArray arrayWithObjects:(id)[[UIColor grayColor] CGColor], (id)[[UIColor whiteColor] CGColor], nil];
+        main.backgroundColor = [UIColor clearColor];
+        self.view = main;
+        [main release];
+    }
 
-    self.view = main;
-    [main release];
 
     _wrapperView = [[UIView alloc] initWithFrame: CGRectMake(0, (screen.height - kImageHeight) / 2, screen.width, kImageHeight)];
     _wrapperView.autoresizingMask = UIViewAutoresizingFlexibleWidth
@@ -158,6 +179,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    if (_backdropImage) {
+        _backdropImage.frame = self.view.frame;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -171,6 +196,8 @@
 {
     [_logoImage release];
     _logoImage = nil;
+    [_backdropImage release];
+    _backdropImage = nil;
     [_wrapperView release];
     _wrapperView = nil;
     [super viewDidUnload];

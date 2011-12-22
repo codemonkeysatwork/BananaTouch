@@ -16,6 +16,7 @@
 @property (nonatomic, retain) UIViewController<BTSideViewController> *sideViewController;
 @property (nonatomic, assign) BOOL animateSideView;
 @property (nonatomic, retain, readonly) UIImageView *logoImage;
+@property (nonatomic, retain, readonly) UIImageView *backdropImage;
 
 - (id)initWithSideController: (UIViewController<BTSideViewController> *)sideController;
 - (id)initWithSideController: (UIViewController<BTSideViewController> *)sideController animated:(BOOL)animated;
