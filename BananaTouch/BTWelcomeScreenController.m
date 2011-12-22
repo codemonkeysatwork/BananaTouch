@@ -154,13 +154,18 @@
 {
     CGSize screen = [[UIScreen mainScreen] applicationFrame].size;
 
-    if (_backdropImageLandscape) {           
+    if (_backdropImageLandscape || _backdropImagePortrait) {
         _backdropImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
         _backdropImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth
                                 | UIViewAutoresizingFlexibleHeight;
         _backdropImageView.opaque = YES;
         _backdropImageView.backgroundColor = [UIColor blackColor];
-        _backdropImageView.image = _backdropImageLandscape;
+        if (_backdropImageLandscape) {
+            _backdropImageView.image = _backdropImageLandscape;
+        }
+        if (_backdropImagePortrait && UIInterfaceOrientationIsPortrait([[UIDevice currentDevice] orientation])) {
+            _backdropImageView.image = _backdropImagePortrait;
+        }
         self.view = _backdropImageView;
     } else {
         BTGradientView *main = [[BTGradientView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
