@@ -13,6 +13,7 @@
 @interface BTWelcomeScreenController()
 @property (nonatomic, retain) UIView* wrapperView;
 @property (nonatomic, assign) BOOL keyboardVisible;
+@property (nonatomic, retain) UIImageView* backdropImageView;
 - (void)showSideScreen;
 @end
 
@@ -20,11 +21,13 @@
 
 @synthesize sideViewController = _sideViewController;
 @synthesize logoImage = _logoImage;
-@synthesize backdropImage = _backdropImage;
+@synthesize backdropImageLandscape = _backdropImageLandscape;
+@synthesize backdropImagePortrait = _backdropImagePortrait;
 @synthesize animateSideView = _animateSideView;
 
 @synthesize wrapperView = _wrapperView;
 @synthesize keyboardVisible = _keyboardVisible;
+@synthesize backdropImageView = _backdropImageView;
 
 #define kImageHeight 320
 #define kImageWidth 320
@@ -53,18 +56,6 @@
                                         | UIViewAutoresizingFlexibleRightMargin;
     }
     return _logoImage;
-}
-
-- (UIImageView *)backdropImage
-{
-    if (!_backdropImage) {
-        CGSize screen = [[UIScreen mainScreen] applicationFrame].size;
-
-        _backdropImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
-        _backdropImage.autoresizingMask = UIViewAutoresizingFlexibleWidth
-                                            | UIViewAutoresizingFlexibleHeight;
-    }
-    return _backdropImage;
 }
 
 #pragma mark - Memory Management
@@ -100,7 +91,9 @@
     [_sideViewController release];
     [_logoImage release];
     [_wrapperView release];
-    [_backdropImage release];
+    [_backdropImageView release];
+    [_backdropImageLandscape release];
+    [_backdropImagePortrait release];
     [super dealloc];
 }
 
@@ -117,6 +110,17 @@
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
 	[_sideViewController willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
+    if (_backdropImageView) {
+        if (UIInterfaceOrientationIsPortrait(toInterfaceOrientation)) {
+            if (_backdropImagePortrait) {
+                _backdropImageView.image = _backdropImagePortrait;
+            }
+        } else {
+            if (_backdropImageLandscape) {
+                _backdropImageView.image = _backdropImageLandscape;
+            }
+        }
+    }
 }
 
 
@@ -150,11 +154,14 @@
 {
     CGSize screen = [[UIScreen mainScreen] applicationFrame].size;
 
-    if (_backdropImage) {
-        UIView *main = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
-        self.view = main;
-        [main release];
-        [self.view addSubview:_backdropImage];
+    if (_backdropImageLandscape) {           
+        _backdropImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
+        _backdropImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth
+                                | UIViewAutoresizingFlexibleHeight;
+        _backdropImageView.opaque = YES;
+        _backdropImageView.backgroundColor = [UIColor blackColor];
+        _backdropImageView.image = _backdropImageLandscape;
+        self.view = _backdropImageView;
     } else {
         BTGradientView *main = [[BTGradientView alloc] initWithFrame:CGRectMake(0, 0, screen.width, screen.height)];
         main.colors = [NSArray arrayWithObjects:(id)[[UIColor grayColor] CGColor], (id)[[UIColor whiteColor] CGColor], nil];
@@ -180,9 +187,9 @@
 {
     [super viewDidLoad];
 
-    if (_backdropImage) {
-        _backdropImage.frame = self.view.frame;
-    }
+//    if (_backdropImageView) {
+//        _backdropImage.frame = self.view.frame;
+//    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -194,10 +201,8 @@
 
 - (void)viewDidUnload
 {
-    [_logoImage release];
-    _logoImage = nil;
-    [_backdropImage release];
-    _backdropImage = nil;
+    [_backdropImageView release];
+    _backdropImageView = nil;
     [_wrapperView release];
     _wrapperView = nil;
     [super viewDidUnload];
