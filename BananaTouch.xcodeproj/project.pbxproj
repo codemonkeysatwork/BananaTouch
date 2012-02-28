@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB3728E214FD527E00BBE476 /* BTDismissPopoverDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DB3728DF14FD527E00BBE476 /* BTDismissPopoverDelegate.h */; };
+		DB3728E314FD527E00BBE476 /* BTViewUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DB3728E014FD527E00BBE476 /* BTViewUtils.h */; };
+		DB3728E414FD527E00BBE476 /* BTViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3728E114FD527E00BBE476 /* BTViewUtils.m */; };
 		DB551C1714394E0100A28FCB /* BTRoundedView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB551C1514394E0100A28FCB /* BTRoundedView.h */; };
 		DB551C1814394E0100A28FCB /* BTRoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB551C1614394E0100A28FCB /* BTRoundedView.m */; };
 		DBA9425E141FF23E00FA606C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9425D141FF23E00FA606C /* Foundation.framework */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB3728DF14FD527E00BBE476 /* BTDismissPopoverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDismissPopoverDelegate.h; sourceTree = "<group>"; };
+		DB3728E014FD527E00BBE476 /* BTViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTViewUtils.h; sourceTree = "<group>"; };
+		DB3728E114FD527E00BBE476 /* BTViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTViewUtils.m; sourceTree = "<group>"; };
 		DB551C1514394E0100A28FCB /* BTRoundedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTRoundedView.h; sourceTree = "<group>"; };
 		DB551C1614394E0100A28FCB /* BTRoundedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTRoundedView.m; sourceTree = "<group>"; };
 		DBA9425A141FF23E00FA606C /* libBananaTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBananaTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,12 +152,15 @@
 		DBA9425F141FF23E00FA606C /* BananaTouch */ = {
 			isa = PBXGroup;
 			children = (
+				DB3728DF14FD527E00BBE476 /* BTDismissPopoverDelegate.h */,
 				DBA9428C141FF2BA00FA606C /* BTGradientView.h */,
 				DBA9428D141FF2BA00FA606C /* BTGradientView.m */,
-				DBA9428E141FF2BA00FA606C /* BTWelcomeScreenController.h */,
-				DBA9428F141FF2BA00FA606C /* BTWelcomeScreenController.m */,
 				DB551C1514394E0100A28FCB /* BTRoundedView.h */,
 				DB551C1614394E0100A28FCB /* BTRoundedView.m */,
+				DB3728E014FD527E00BBE476 /* BTViewUtils.h */,
+				DB3728E114FD527E00BBE476 /* BTViewUtils.m */,
+				DBA9428E141FF2BA00FA606C /* BTWelcomeScreenController.h */,
+				DBA9428F141FF2BA00FA606C /* BTWelcomeScreenController.m */,
 				DBA94260141FF23E00FA606C /* Supporting Files */,
 			);
 			path = BananaTouch;
@@ -228,6 +237,8 @@
 				DBA94290141FF2BA00FA606C /* BTGradientView.h in Headers */,
 				DBA94292141FF2BA00FA606C /* BTWelcomeScreenController.h in Headers */,
 				DB551C1714394E0100A28FCB /* BTRoundedView.h in Headers */,
+				DB3728E214FD527E00BBE476 /* BTDismissPopoverDelegate.h in Headers */,
+				DB3728E314FD527E00BBE476 /* BTViewUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +371,7 @@
 				DBA94291141FF2BA00FA606C /* BTGradientView.m in Sources */,
 				DBA94293141FF2BA00FA606C /* BTWelcomeScreenController.m in Sources */,
 				DB551C1814394E0100A28FCB /* BTRoundedView.m in Sources */,
+				DB3728E414FD527E00BBE476 /* BTViewUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
