@@ -1,6 +1,6 @@
 //
 //  BlackRectangle.m
-//  CameraTest
+//  BananaTouch
 //
 //  Created by Edward Rudd on 2/1/09.
 //  Copyright 2009 OutOfOrder.cc. All rights reserved.

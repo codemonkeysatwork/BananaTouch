@@ -1,6 +1,6 @@
 //
 //  WelcomeScreenController.h
-//  FlightBag
+//  BananaTouch
 //
 //  Created by Edward Rudd on 6/22/11.
 //  Copyright 2011 OutOfOrder.cc. All rights reserved.

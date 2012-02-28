@@ -1,6 +1,6 @@
 //
 //  BTGradientView.m
-//  BoardRoom
+//  BananaTouch
 //
 //  Created by Edward Rudd on 8/31/11.
 //  Copyright 2011 OutOfOrder.cc. All rights reserved.
