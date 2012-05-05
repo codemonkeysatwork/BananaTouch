@@ -323,7 +323,7 @@
 - (void)dismiss
 {
     self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self.parentViewController dismissModalViewControllerAnimated:YES];
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark - Side View Animation Effects
