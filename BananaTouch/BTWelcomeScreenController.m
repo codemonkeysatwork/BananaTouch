@@ -35,7 +35,7 @@
 
 #pragma mark - Properties
 
-- (void)setSideViewController:(UIViewController *)sideViewController
+- (void)setSideViewController:(UIViewController<BTSideViewController> *)sideViewController
 {
     if (_sideViewController.view.superview) {
         [_sideViewController.view removeFromSuperview];
