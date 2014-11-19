@@ -19,7 +19,7 @@
 {
     SideLoginController *sc = [[SideLoginController alloc] init];
     self.welcomeScreenController = [[BTWelcomeScreenController alloc] initWithSideController: sc];
-    
+
     self.window.rootViewController = self.welcomeScreenController;
     [self.window makeKeyAndVisible];
     return YES;
